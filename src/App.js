@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Profile from './components/Profile';
+import logo from './assets/Octocat.png';
+import './index.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid d-flex justify-content-center align-items-center">
+      <img src={logo} height="100" alt="LogoGitHub"/> <br/>
+      <Profile />
     </div>
   );
 }
